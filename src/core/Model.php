@@ -8,12 +8,7 @@ use \PDO;
 */
 class Model extends Database 
 {
-	public $db_config = [
-		'db_host' => 'localhost',
-		'db_name' => 'foo',
-		'db_user' => 'dev',
-		'db_pass' => '123456'
-	];
+	public $db_config = [];
 
     private $stmt;
     private $data;

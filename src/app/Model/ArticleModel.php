@@ -1,19 +1,16 @@
 <?php
 namespace App\Model;
-use Core\Model;
+use App\AppModel;
 
 /**
-* 
+* Class contenant les méthodes concernant la table Article
+* Elle étend la class AppModel situé à la racine de /app
 */
-class ArticleModel extends Model
+class ArticleModel extends AppModel
 {
-	public $table = 'test';
-	public $pk    = 'id_test';
+	/**
+	 * 
+	**/
+	protected $table = 'article';
 
-	public function getAll()
-	{
-		$req = 'SELECT * FROM $this->table';
-		var_dump($req);
-		return $this->query($req);
-	}
 }

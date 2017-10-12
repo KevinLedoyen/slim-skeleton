@@ -1,8 +1,7 @@
 <?php
-
 namespace Tests\Functional;
 
-class ArticleTest extends BaseTestCase
+class BasiqueTest extends BaseTestCase
 {
     /**
      * Test that the index route returns a rendered response containing the text 'SlimFramework' but not a greeting
